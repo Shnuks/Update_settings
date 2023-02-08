@@ -3,7 +3,7 @@ version='1.2'
 hostname=$(hostname)
 echo -e "\e[44m$hostname - BEGGINING UPDATE"
 
-CURDATE='date'
+CURDATE=`date`
 RED='\e[01;31m'
 echo -e "##   ${RED} $CURDATE ${BLUE}"
 /usr/bin/killall puppet -9 /usr/bin/killall puppet -9 &>/dev/null
